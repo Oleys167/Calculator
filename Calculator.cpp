@@ -15,4 +15,7 @@ void Calculator::process()
     if (znak== '/'){
         cout<<A/B;
     }
+    if (znak== '%'){
+        cout<<A%B;
+    }
 }
