@@ -4,28 +4,27 @@ using namespace std;
 
 class Calculator{
     int A,B;
-    
-    char C;
+    char znak;
+    void input(){cin >> A >> znak >> B;}
 public:
     Calculator(){cout<<"Введите выражение"<<endl;}
     void process();
-    void input(){cin >> A >> C >> B;}
 };
 
 void Calculator::process()
 {
     input();
     
-    if (C== '+'){
+    if (znak== '+'){
         cout<<A+B;
     }
-    if (C== '-'){
+    if (znak== '-'){
         cout<<A-B;
     }
-    if (C== '*'){
+    if (znak== '*'){
         cout<<A*B;
     }
-    if (C== '/'){
+    if (znak== '/'){
         cout<<A/B;
     }
 }
